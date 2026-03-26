@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 p{
     color: white;
 }
@@ -9,7 +12,7 @@ body{
 .header{
     display: flex;
     margin-bottom: 50px;
-    
+    align-items: center;
 }
 .header img{
     width: 150px;
@@ -31,40 +34,70 @@ body{
     font-family: 'Lucida Calligraphy';
 }
 .middle img{
-    width: 450px;
+    max-width: 80%;
+    max-width: 450px;
+    height: auto;
     border: 5px solid #c9ab01;
     border-radius: 10px;
 }
-.selectTime{
-    width: 100%;
+.bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 10px;
 }
-.time button {
-    color: black;
-    font-weight: bold;
+.selectTime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
 }
 .time{
     background-color: white;
+    font-weight: bold;
     width:50%;
     padding: 10px;
     border-radius: 10px;
     border: 5px solid #c9ab01;
     cursor: pointer;
 }
+.time:active{
+    transform: scale(0.98);
+}
 .time:hover{
     background-color: #ffd900;
 }
 .sendButton{
     margin-top: 10px;
+    font-weight: bold;
     background-color: #c9ab01;
     border: 5px solid white;
     padding: 10px;
     border-radius: 10px;
     width: 50%;
+    cursor: pointer;
 }
 .sendButton:hover{
     background-color: #ffd900;
+}
+.sendButton:active{
+    transform: scale(0.98)
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: white;
+    padding: 10px;
+    border: 5px solid #c9ab01;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contactInput{
+    width: 50%;
+    
+
 }
