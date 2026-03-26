@@ -20,7 +20,7 @@ sendBtn.addEventListener('click', () =>{
     const name = document.getElementById('user-name').value;
     //Get the date
     const date = document.getElementById('date').value;
-    const phoneNumber = '526144680953'
+    const phoneNumber = '526142249795'
 
     if(!name || !date || !selectedTime ){
         alert('Por favor rellena todos los campo');
