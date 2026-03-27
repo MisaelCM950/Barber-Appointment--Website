@@ -3,6 +3,7 @@ const bottomSection = document.querySelector('.bottom');
 const middleSection = document.querySelector('.middle');
 const successMsg = document.getElementById('successMessage');
 
+
 let selectedTime = "";
 const timeButtons = document.querySelectorAll('.time');
 timeButtons.forEach(button => {
@@ -36,7 +37,5 @@ sendBtn.addEventListener('click', () =>{
     bottomSection.style.display = 'none';
     middleSection.style.display = 'none';
     successMsg.style.display = 'block';
-})
-
-
+});
 
