@@ -20,26 +20,23 @@ sendBtn.addEventListener('click', () =>{
     const name = document.getElementById('user-name').value;
     //Get the date
     const date = document.getElementById('date').value;
+    // Phone number WhatsApp
     const phoneNumber = '526142249795'
 
     if(!name || !date || !selectedTime ){
-        alert('Por favor rellena todos los campo');
+        alert('Por favor rellena todos los campos');
         return;
     }
     const message = `Hola! Soy ${name}. Me gustaría agendar una cita para el día ${date} a las ${selectedTime}.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank')
-})
 
-
-// Get the time
-
-
-
-
-sendBtn.addEventListener('click', ()=>{
+    // Success Message
     bottomSection.style.display = 'none';
     middleSection.style.display = 'none';
     successMsg.style.display = 'block';
-});
+})
+
+
+
